@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pagination</title>
+
+    
+    <script type="module" crossorigin src="/search-like-hm-12/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/search-like-hm-12/assets/index-a5c56e25.css">
+  </head>
+  <body>
+
+    <!-- Форма запиту -->
+    <form class="form-inline search-form">
+      <div class="form-group mx-sm-3 mb-2">
+    
+        <input
+          type="text"
+          class="form-control"
+          name="query"
+          id="searchQuery"
+          placeholder="Search images..."
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mb-2 start-btn">Search</button>
+    </form>
+
+    <!-- Список статей -->
+    <ul class="articles"></ul>
+
+    <!-- Кнопка завантажити ще -->
+    <button
+      type="button"
+      class="btn btn-primary button"
+      data-action="load-more"
+    >
+      <!-- Спінер -->
+      <span
+        class="spinner-border spinner-border-sm spinner is-hidden"
+        role="status"
+        aria-hidden="true"
+      ></span>
+
+      <span class="label">Load more</span>
+    </button>
+    
+  </body>
+</html>
